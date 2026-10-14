@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function CartPage() {
     const { cartItems,total, removeFromCart, updateQuantity } = useCart();
     const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL;
+    console.log("Cart Items:", cartItems);
 
     return (
         <div className="pt-20 min-h-screen bg-gray-100 p-8">
